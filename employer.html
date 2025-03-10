@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="bigbox">
+        <div class="bigbox__left">
+            <aside class="bigbox__sidebar">
+                <a href="dash.html" class="bigbox__sidebar__logo">LOGO</a>
+                <ul class="bigbox__sidebar__menu">
+                    <li class="bigbox__sidebar__menu__item"><a href="dash.html" >Dashboard</a></li>
+                    <li class="bigbox__sidebar__menu__item"><a href="product.html" >Produit</a></li>
+                    <li class="bigbox__sidebar__menu__item" id="active"><a href="employer.html" >Employer</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="bigbox__rigth">
+            <nav class="bigbox__nav">
+                <div class="bigbox__nav__contain">
+                    <a href="#" class="bigbox__nav__link"></a>
+                </div>
+            </nav>
+            <main class="bigbox__main">
+                <div class="bigbox__main__container">
+                    <section class="bigbox__main__container">
+                        <div class="main__content">
+                            <div class="main__content__top">
+                                <div class="main__content__top__left">                                
+                                    <button class="main__content__top__left__btn"><i class="fa-solid fa-plus"></i>Ajouter</button>
+                                </div>
+                                <div class="main__content__top__rigth">
+                                    <p class="main__content__top__rigth__text">Nombre total : <span id="total_sum"></span></p>
+                                </div>
+                            </div>
+                            <div class="main__content__bottom">
+                                <table class="main__content__bottom__table">
+                                    <caption class="main__content__bottom__table__title">Table des employers</caption>
+                                    <thead class="main__content__bottom__table__column">
+                                        <th class="main__content__bottom__table__column__item">N°</th>
+                                        <th class="main__content__bottom__table__column__item">Nom et Prénom</th>
+                                        <th class="main__content__bottom__table__column__item">Poste</th>
+                                        <th class="main__content__bottom__table__column__item">Salaire de base</th>
+                                        <th class="main__content__bottom__table__column__item">Action</th>
+                                        <th class="main__content__bottom__table__column__item">Status</th>
+                                    </thead>
+                                    <tbody id="tbody__employ">
+                                        <tr class="main__content__bottom__table__line">
+                                            <td class="main__content__bottom__table__line__item">ffr</td>
+                                            <td class="main__content__bottom__table__line__item">ffr</td>
+                                            <td class="main__content__bottom__table__line__item">ffr</td>
+                                            <td class="main__content__bottom__table__line__item">ffr</td>
+                                            <td class="main__content__bottom__table__line__item" id="action">
+                                                <button id="action__details"></button>
+                                                
+                                            </td>
+                                            <td class="main__content__bottom__table__line__item" id="total">ffr</td>
+                                        </tr>
+                                        <div class="action__list">
+                                            <button class="action__item">Suprimer</button>
+                                            <button class="action__item">Modifier</button>
+                                            <button class="action__item">Stock</button>
+                                            <button class="action__item">Voir plus</button>
+                                        </div>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+    <div class="modal__form">
+        <div class="form_container">
+            <div class="close_form">&times;</div>
+            <div class="form_container__contain">
+                <form action="#" class="form" id="employ__form">
+                    <h1 class="form__title">Fiche d'enregistrement</h1>
+                    <div class="form__item">
+                        <label for="item1">Nom et prénom</label>
+                        <input type="text" name="item1" id="item1" placeholder="Veuillez entrer un nom">
+                    </div>
+                    <div class="form__item">
+                        <label for="item2">Post</label>
+                        <input type="text" name="item2" id="item2" placeholder="Veuillez entrer le post concerné">
+                    </div>
+                    <div class="form__item">
+                        <label for="item3">Status</label>
+                        <input type="text" name="item3" id="item3" placeholder="Actif/Inactif">
+                    </div>
+                    <div class="form__item">
+                        <label for="item4">Salaire de base</label>
+                        <input type="number" name="item4" id="item4" placeholder="Veuillez entrer le montant">
+                    </div>
+                    <div class="form__item__btn">
+                        <button class="form__button__btn">Enregistrer</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="all.js"></script>
+</body>
+</html>

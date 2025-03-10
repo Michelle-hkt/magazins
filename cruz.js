@@ -32,7 +32,7 @@ const userSave = {
                 userList.push(userInformation)
                 console.log(userList)
                 localStorage.setItem('user',JSON.stringify(userList))
-                const url = 'admin.html'
+                const url = 'dash.html'
                 window.location.href = url
                 formTag.reset()
             })
